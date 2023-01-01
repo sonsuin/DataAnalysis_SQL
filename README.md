@@ -1,2 +1,1 @@
-# PostgreSQL-study
-PostgreSQL 공부
+tool : DBeaver
