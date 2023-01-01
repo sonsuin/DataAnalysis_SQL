@@ -52,7 +52,7 @@ order by 4 desc;
 --3. 구매고객의 성연령 분석--------------------------------------------------------------
 select ui.gender , ui.age_band , sum(gmv) gmv
 from online_order oo 
-join user_info ui on oo.userid = ui.userid 
+left join user_info ui on oo.userid = ui.userid 
 group by 1, 2
 order by 3 desc;
 
